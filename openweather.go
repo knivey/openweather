@@ -154,7 +154,7 @@ func CurrentCond(location string, units int) (jsonObj CurrentData, err error) {
 	jsonObj.genUnits(units)
 
 	if jsonObj.Name == "" {
-		jsonObj.Name = fmt.Sprintf("Lon: %v Lat: %v", jsonObj.Coord.Lon, jsonObj.Coord.Lat)
+		jsonObj.Name = fmt.Sprintf("Long: %v Lat: %v", jsonObj.Coord.Lon, jsonObj.Coord.Lat)
 	}
 
 	return
