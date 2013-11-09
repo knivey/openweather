@@ -99,10 +99,10 @@ func (c CurrentData) String() string {
 
 //Fill in unit values
 func (c CurrentData) genUnits(units int) {
-	if &c.Wind == nil || &c.Wind.Speed == nil {
+	if c.Wind == nil || &c.Wind.Speed == nil {
 		return
 	}
-	if &c.Main == nil || &c.Main.Temp == nil {
+	if c.Main == nil || &c.Main.Temp == nil {
 		return
 	}
 	if units == IMPERIAL {
